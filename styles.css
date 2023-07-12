@@ -5,8 +5,8 @@
     --gray2-color: rgb(102,102,102);
     --gray3-color: rgb(153,153,153);
     --gray4-color: rgb(204,204,204);
-    --background-theme-color: rgb(241,229,216);
-    --background-body: rgb(237,239,238);
+    --background-section-color: rgb(241,229,216);
+    --background-body-color: rgb(237,239,238);
 }
 
 *,*::before,*::after { 
@@ -16,7 +16,7 @@
 body {
     min-height: 100vh;
 
-    background-color: var(--background-body);
+    background-color: var(--background-body-color);
     font-family: serif;
     font-size: 16px;
     line-height: 1.5;
@@ -108,7 +108,7 @@ main {
     text-align: left;
 
     text-shadow: 2px 2px 4px white;
-    background: var(--background-theme-color);
+    background: var(--background-section-color);
 }
 /* ----------- Footer ----------- */
 footer div {
