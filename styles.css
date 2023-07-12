@@ -41,17 +41,21 @@ header > img {
 }
 /* ----------- Nav ----------- */
 nav {
-    background-color: var(--gray1-color);
     border-radius: 25px;
     margin: 20px;
 }
 nav ul {
+    flex: 1;
     display: flex;
     flex-flow: wrap;
     justify-content:center;
 
     list-style: none;
     text-align: center;
+
+    max-width: calc(1200px + 40px);
+    border-radius: 25px;
+    background-color: var(--gray1-color);
 }
 nav li {
     flex:1;
@@ -116,11 +120,15 @@ main {
 /* ----------- Footer ----------- */
 footer {
     flex-shrink: 0;
+
     display: flex;
+    justify-content: center;
+    
     background-color: clear;
 }
 footer div {
     flex: 1;
+    max-width: calc(600px + 20px);
     background-color: clear;
 }
 footer img {
