@@ -14,10 +14,6 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-
-    height: 100%;
     min-height: 100vh;
 
     background-color: var(--background-body);
@@ -27,13 +23,22 @@ body {
     
     margin: 1%;
 }
-/* ----------- Header ----------- */
-header {
+/* ----------- Flex ----------- */
+.flex-container-row {
     display: flex;
-    justify-content: center;
+    flex-flow: wrap;
+    justify-content:center;
 }
-header > img {
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-item {
     flex: 1;
+}
+/* ----------- Header ----------- */
+header > img {
     max-width: 350px;
 
     width: 100%;
@@ -45,11 +50,6 @@ nav {
     margin: 20px;
 }
 nav ul {
-    flex: 1;
-    display: flex;
-    flex-flow: wrap;
-    justify-content:center;
-
     list-style: none;
     text-align: center;
 
@@ -60,7 +60,6 @@ nav ul {
 nav li {
     flex:1;
     max-width: 5em;
-
     margin: 1em;
 }
 nav a {
@@ -75,18 +74,13 @@ nav a:hover{
 main {
     flex-grow: 1;
 }
-.flex-container {
-    display: flex;
-    flex-flow: wrap;
-    justify-content:center;
-}
-.flex-item-row1  {
-    flex: 1;
+.section-1 {
+    max-width: calc(1200px + 40px);
+
     border-radius: 25px;
 
     margin: 15px;
     padding: 1em;
-    max-width: calc(1200px + 40px);
     
     font-weight: normal;
     font-size: 1em;
@@ -100,14 +94,13 @@ main {
     background-size: cover;
     background-position: center;
 }
-.flex-item-row2  {
-    flex: 1;
+.section-2 {
+    max-width: 400px;
+
     border-radius: 25px;
 
     margin: 10px;
     padding: 1.5em;
-
-    max-width: 400px;
 
     font-weight: normal;
     font-size: 12px;
@@ -118,20 +111,10 @@ main {
     background: var(--background-theme-color);
 }
 /* ----------- Footer ----------- */
-footer {
-    flex-shrink: 0;
-
-    display: flex;
-    justify-content: center;
-    
-    background-color: clear;
-}
 footer div {
-    flex: 1;
     max-width: calc(600px + 20px);
-    background-color: clear;
 }
-footer img {
+.footer-logo img {
     height: auto;
     width: 50px;
 
@@ -145,7 +128,6 @@ footer img {
 /* ------ Header Fonts ------*/
 h1 {
     font-size: 2em;
-
 }
 h2 {
     font-size: 2em;
