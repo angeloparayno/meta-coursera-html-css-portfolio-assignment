@@ -32,7 +32,6 @@ body {
 .flex-container-column {
     display: flex;
     flex-direction: column;
-    
 }
 .flex-item {
     flex: 1;
@@ -59,6 +58,7 @@ nav ul {
 }
 nav li {
     flex:1;
+    display: inline-block;
     max-width: 5em;
     margin: 1em;
 }
@@ -114,14 +114,14 @@ main {
 footer div {
     max-width: calc(600px + 20px);
 }
-.footer-logo img {
+#footer-logo img {
     height: auto;
     width: 50px;
 
     display: block;
     margin-right: auto;
 }
-.footer-copyright {
+#footer-copyright {
    text-align: right;
 }
 /* ----------- Etc ----------- */
