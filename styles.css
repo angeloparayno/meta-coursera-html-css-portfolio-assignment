@@ -8,10 +8,12 @@
     --background-section-color: rgb(241,229,216);
     --background-body-color: rgb(237,239,238);
 
+    /*
     --dev-outline-line: 2px;
     --dev-outline-1:red;
     --dev-outline-2:blue;
     --dev-outline-3: green;
+    */
 }
 
 *,*::before,*::after { 
