@@ -7,6 +7,11 @@
     --gray4-color: rgb(204,204,204);
     --background-section-color: rgb(241,229,216);
     --background-body-color: rgb(237,239,238);
+
+    --dev-outline-line: 2px;
+    --dev-outline-1:red;
+    --dev-outline-2:blue;
+    --dev-outline-3: green;
 }
 
 *,*::before,*::after { 
@@ -148,9 +153,11 @@ li {
 .image-container {
     width: auto;
     height: auto;
+    border: var(--dev-outline-line) solid var(--dev-outline-1);
 }
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: var(--dev-outline-line) solid var(--dev-outline-2);
 }
